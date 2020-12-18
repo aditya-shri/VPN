@@ -1,4 +1,5 @@
-# One-click Shadowsocks+V2Ray-plugin to quickly deploy to Heroku
+# Personal VPN
+## Shadowsocks+V2Ray-plugin
 
 Click the button below to deploy, and remember to order a Star if it works:
 
@@ -20,14 +21,14 @@ After the server is deployed, click open app to display the webpage normally. Af
 
 ## 2. Client Configuration
 
-QR code address: https://test.herokuapp.com/qr_img/v2.png
+QR code address: https://test.herokuapp.com/qr/v.png
 (Change test to your own app name, if you change QR_Path, also change the corresponding qr_img to the modified one)
 
 Use the client to scan the QR code.
 
 **or**
 
-Configuration file address: https://test.herokuapp.com/qr_img
+Configuration file address: https://test.herokuapp.com/qr
 
 Copy after opening and import it on the client.
 
@@ -67,6 +68,8 @@ To update the v2ray-plugin version, visit <https://dashboard.heroku.com/apps> an
 + v2ray-plugin: v1.3.0
 
 # Reference
+
+https://github.com/ygcaicn/ss-heroku
 
 https://github.com/xiangrui120/v2ray-heroku-undone
 
