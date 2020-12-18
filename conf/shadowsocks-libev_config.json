@@ -1,0 +1,15 @@
+# 顶格注释内容在sed处理时将被剔除，不会出现在最后的配置文件中
+# 在heroku上fast_open必须为false
+{
+    "server":"127.0.0.1",
+    "server_port":"2333",
+    "password":"${PASSWORD}",
+    "timeout":300,
+    "method":"${ENCRYPT}",
+    "mode": "tcp_and_udp",
+    "fast_open":false,
+    "reuse_port":true,
+    "no_delay":true,
+    "plugin": "v2ray-plugin",
+    "plugin_opts":"server;path=${V2_Path}"
+}

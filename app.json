@@ -1,0 +1,44 @@
+{
+  "name": "Shadowsocks+V2Ray-plugin快速部署",
+  "description": "Deploy Shadowsocks+V2Ray-plugin to Heroku.",
+  "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
+  "env": {
+     "ENCRYPT": {
+      "description": "加密方式，由于有https加持，选最简单的就可以，默认：rc4-md5,其它的有（aes-256-cfb,chacha20-ietf-poly1305,salsa20,chacha20-ietf等.）",
+      "value": "rc4-md5"
+    },
+     "PASSWORD": {
+      "description": "shadowsocks的密码，可以使用uuid作为密码（http://www.uuid.online/在线生成）",
+      "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
+    },
+
+    "VER": {
+       "description": "v2ray-plugin版本，默认latest安装最新版本，可以去https://github.com/shadowsocks/v2ray-plugin/releasesV2Ray选择版本 （例如：1.1.0)",
+       "value": "latest"
+     }, 
+
+     "V2_Path": {
+      "description": "Path路径，默认/s233,为了安全你也可以使用uuid替换s233，/不能少。如果开启反代，不要与反代uri重复",
+      "value": "/s233"
+    },
+
+     "AppName": {
+      "description": "请输入最上方填写的App Name，用于生成配置和二维码，如果不想生成输入no",
+      "value": "no"
+    },
+
+    "QR_Path": {
+       "description": "二维码和配置链接路径，默认qr_img，为了保密性你也可以使用uuid,但是不能与V2_Path相同。如AppName变量为no，此变量没有作用",
+       "value": "/qr_img"
+     },
+
+     "ProxySite": {
+      "description": "反代一个网站，例如：www.ietf.org，不填写表示使用本地静态网页文件。",
+      "value": "www.ietf.org"
+    }
+
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
