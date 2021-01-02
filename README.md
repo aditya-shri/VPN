@@ -28,7 +28,8 @@ Use the client to scan the QR code.
 
 **or**
 
-Configuration file address: https://test.herokuapp.com/qr
+Configuration file address: https://test.herokuapp.com/qr/ 
+slash '/' is important at last of configuration file address.
 
 Copy after opening and import it on the client.
 
