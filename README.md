@@ -34,7 +34,7 @@ Use the client to scan the QR code.
 
 Configuration file address: 
 
-***https://{YOUR-APP}.herokuapp.com/qr/*** 
+<***https://{YOUR-APP}.herokuapp.com/qr/***> 
 
 slash '/' is important at last of configuration file address.
 
