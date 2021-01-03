@@ -21,8 +21,8 @@ After the server is deployed, click open app to display the webpage normally. Af
 
 ## 2. Client Configuration
 
-QR code address: https://test.herokuapp.com/qr/vpn.png
-(Change test to your own app name, if you change QR_Path, also change the corresponding qr_img to the modified one)
+QR code address: **https://{YOUR-APP}.herokuapp.com/qr/vpn.png**
+(Change **YOUR-APP** to your own app name, if you change QR_Path, also change the corresponding qr_img to the modified one)
 
 Use the client to scan the QR code.
 
