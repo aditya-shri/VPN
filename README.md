@@ -28,7 +28,8 @@ Use the client to scan the QR code.
 
 **or**
 
-Configuration file address: https://test.herokuapp.com/qr
+Configuration file address: https://test.herokuapp.com/qr/
+(Change test to your own app name)
 
 Copy after opening and import it on the client.
 
@@ -49,9 +50,9 @@ Path: The path you filled in during deployment
 
 Those without a client can also download from here (Android):
 
-[shadowsocks](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.0.5/shadowsocks--universal-5.0.5.apk)
+[shadowsocks](https://github.com/shadowsocks/shadowsocks-android/releases/latest/download/shadowsocks--universal-5.0.5.apk)
 
-[v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin-android/releases/download/v1.3.1/v2ray-arm64-v8a-1.3.1.apk)
+[v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin-android/releases/latest/download/v2ray-arm64-v8a-1.3.1.apk)
 
 windows:
 
