@@ -29,6 +29,7 @@ Use the client to scan the QR code.
 **or**
 
 Configuration file address: https://test.herokuapp.com/qr/
+
 (Change test to your own app name)
 
 Copy after opening and import it on the client.
