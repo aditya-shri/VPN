@@ -12,27 +12,28 @@ Native V2Ray deployment: <https://github.com/ygcaicn/v2ray-heroku>
 
 ## 0. Attention
 
-Deployment requires registration of a heroku account, a ladder is required when registering a heroku account (otherwise the verification code cannot be brushed out), an email address that can receive verification codes normally (@qq.com, @163.com are not acceptable), gmail is conditional
-Best, no conditions recommend outlook <https://login.live.com/> here.
+Deployment requires registration of a heroku account, a email is required when registering a heroku account (otherwise the verification code cannot be brushed out). 
+An email address that can receive verification codes normally (@qq.com, @163.com are not acceptable):
+- gmail (Best) 
+- Outlook <https://login.live.com/> here.
 
 ## 1. Verification
 
-After the server is deployed, click open app to display the webpage normally. After the address is filled with the path (for example: <https://test.herokuapp.com/static>), the 404 page is displayed, which means the deployment is successful.
+After the server is deployed, open app to display the webpage normally. After the address is filled with the path (for example: <https://test.herokuapp.com/static>), the 404 page is displayed, which means the deployment is successful.
 
 ## 2. Client Configuration
 
 QR code address: https://test.herokuapp.com/qr/vpn.png
-(Change test to your own app name, if you change QR_Path, also change the corresponding qr_img to the modified one)
+(Change test to your own app name. If you changed the QR_Path (path to qr png, filled during deployment) variable, also change the corresponding qr_img to the modified one)
 
-Use the client to scan the QR code.
+Use the client (Shadowsocks recommended) to scan the QR code.
 
 **or**
 
-Configuration file address: https://test.herokuapp.com/qr/
-
+Use Configuration file -> Address: https://test.herokuapp.com/qr/
 (Change test to your own app name)
 
-Copy after opening and import it on the client.
+Copy the details after opening and import it to the client.
 
 **or**
 
@@ -61,7 +62,8 @@ windows:
 
 ## 3. Update
 
-To update the v2ray-plugin version, visit <https://dashboard.heroku.com/apps> and select the deployed app. If the VER variable is latest. Directly select More --> Restart all dynos, the program will restart automatically, and the progress can be confirmed through view Logs. (Update the specified version: Settings --> Reveal Config Varsapp -->VER, modify to the required version number, such as 1.2)
+To update the v2ray-plugin version, visit <https://dashboard.heroku.com/apps> and select the deployed app. If the VER variable is latest, directly select More --> Restart all dynos, the program will restart automatically and the progress can be confirmed through view Logs. 
+(Update the specified version: Settings --> Reveal Config Varsapp -->VER, modify to the required version number, such as 1.2)
 
 2020/03/01 The current version is working normally:
 
