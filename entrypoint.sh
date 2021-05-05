@@ -12,7 +12,7 @@ fi
 echo ${PASSWORD}
 
 if [[ -z "${ENCRYPT}" ]]; then
-  ENCRYPT="rc4-md5"
+  ENCRYPT="chacha20-ietf-poly1305"
 fi
 
 
