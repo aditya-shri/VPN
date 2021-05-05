@@ -34,23 +34,14 @@ else
   V_VER="v$VER"
 fi
 
-mkdir /v2raybin
 cd /v2raybin
 V2RAY_URL="https://github.com/shadowsocks/v2ray-plugin/releases/download/${V_VER}/v2ray-plugin-linux-amd64-${V_VER}.tar.gz"
 echo ${V2RAY_URL}
-wget --no-check-certificate ${V2RAY_URL}
+wget ${V2RAY_URL}
 tar -zxvf v2ray-plugin-linux-amd64-$V_VER.tar.gz
 rm -rf v2ray-plugin-linux-amd64-$V_VER.tar.gz
 mv v2ray-plugin_linux_amd64 /usr/bin/v2ray-plugin
 rm -rf /v2raybin
-
-cd /wwwroot
-tar xvf wwwroot.tar.gz
-rm -rf wwwroot.tar.gz
-
-if [ ! -d /etc/shadowsocks-libev ]; then  
-  mkdir /etc/shadowsocks-libev
-fi
 
 bash /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
