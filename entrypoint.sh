@@ -52,29 +52,11 @@ if [ ! -d /etc/shadowsocks-libev ]; then
   mkdir /etc/shadowsocks-libev
 fi
 
-# TODO: bug when PASSWORD contain '/'
-sed -e "/^#/d"\
-    -e "s/\${PASSWORD}/${PASSWORD}/g"\
-    -e "s/\${ENCRYPT}/${ENCRYPT}/g"\
-    -e "s|\${V2_Path}|${V2_Path}|g"\
-    /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
+bash /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
 cat /etc/shadowsocks-libev/config.json
 
-if [[ -z "${ProxySite}" ]]; then
-  s="s/proxy_pass/#proxy_pass/g"
-  echo "site:use local wwwroot html"
-else
-  s="s|\${ProxySite}|${ProxySite}|g"
-  echo "site: ${ProxySite}"
-fi
-
-sed -e "/^#/d"\
-    -e "s/\${PORT}/${PORT}/g"\
-    -e "s|\${V2_Path}|${V2_Path}|g"\
-    -e "s|\${QR_Path}|${QR_Path}|g"\
-    -e "$s"\
-    /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
+bash /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
 echo /etc/nginx/conf.d/ss.conf
 cat /etc/nginx/conf.d/ss.conf
 
