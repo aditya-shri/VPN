@@ -4,8 +4,8 @@
   "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
   "env": {
      "ENCRYPT": {
-      "description": "Encryption method, due to https blessing, choose the simplest one, default: rc4-md5, others are（aes-256-cfb,chacha20-ietf-poly1305,salsa20,chacha20-ietf etc.）",
-      "value": "rc4-md5"
+      "description": "Encryption method, due to https blessing, choose the simplest one, default: chacha20-ietf-poly1305, others are（aes-256-cfb,chacha20-ietf-poly1305,salsa20,chacha20-ietf etc.）",
+      "value": "chacha20-ietf-poly1305"
     },
      "PASSWORD": {
       "description": "The password of shadowsocks, you can use uuid as the password (http://www.uuid.online/ online generation)",
