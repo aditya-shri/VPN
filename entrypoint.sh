@@ -1,47 +1,23 @@
 #!/bin/bash
 
-#v2ray-plugin版本
-if [[ -z "${VER}" ]]; then
-  VER="latest"
-fi
-echo ${VER}
-
 if [[ -z "${PASSWORD}" ]]; then
-  PASSWORD="5c301bb8-6c77-41a0-a606-4ba11bbab084"
+  export PASSWORD="5c301bb8-6c77-41a0-a606-4ba11bbab084"
 fi
 echo ${PASSWORD}
 
 if [[ -z "${ENCRYPT}" ]]; then
-  ENCRYPT="chacha20-ietf-poly1305"
+  export ENCRYPT="chacha20-ietf-poly1305"
 fi
 
-
 if [[ -z "${V2_Path}" ]]; then
-  V2_Path="/s233"
+  export V2_Path="/s233"
 fi
 echo ${V2_Path}
 
 if [[ -z "${QR_Path}" ]]; then
-  QR_Path="/qr_img"
+  export QR_Path="/qr_img"
 fi
 echo ${QR_Path}
-
-
-if [ "$VER" = "latest" ]; then
-  V_VER=`wget -qO- "https://api.github.com/repos/shadowsocks/v2ray-plugin/releases/latest" | sed -n -r -e 's/.*"tag_name".+?"([vV0-9\.]+?)".*/\1/p'`
-  [[ -z "${V_VER}" ]] && V_VER="v1.3.0"
-else
-  V_VER="v$VER"
-fi
-
-cd /v2raybin
-V2RAY_URL="https://github.com/shadowsocks/v2ray-plugin/releases/download/${V_VER}/v2ray-plugin-linux-amd64-${V_VER}.tar.gz"
-echo ${V2RAY_URL}
-wget ${V2RAY_URL}
-tar -zxvf v2ray-plugin-linux-amd64-$V_VER.tar.gz
-rm -rf v2ray-plugin-linux-amd64-$V_VER.tar.gz
-mv v2ray-plugin_linux_amd64 /usr/bin/v2ray-plugin
-rm -rf /v2raybin
 
 bash /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
@@ -53,7 +29,7 @@ cat /etc/nginx/conf.d/ss.conf
 
 
 if [ "$AppName" = "no" ]; then
-  echo "不生成二维码"
+  echo "Do not generate QR-code"
 else
   [ ! -d /wwwroot/${QR_Path} ] && mkdir /wwwroot/${QR_Path}
   plugin=$(echo -n "v2ray;path=${V2_Path};host=${AppName}.herokuapp.com;tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')

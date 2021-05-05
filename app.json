@@ -12,11 +12,6 @@
       "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
     },
 
-    "VER": {
-       "description": "v2ray-plugin version, the latest version is installed by default, you can go to https://github.com/shadowsocks/v2ray-plugin/releasesV2Ray to select the version (for example: 1.1.0)",
-       "value": "latest"
-     }, 
-
      "V2_Path": {
       "description": "Path path, default /s233, you can also replace s233 with uuid for safety, / cannot be less. If anti-generation is turned on, do not repeat with anti-generation uri",
       "value": "/s233"
