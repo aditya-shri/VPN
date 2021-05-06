@@ -4,7 +4,7 @@
   "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
   "env": {
      "ENCRYPT": {
-      "description": "Encryption method, due to https blessing, choose the simplest one, default: chacha20-ietf-poly1305, others are（aes-256-cfb,chacha20-ietf-poly1305,salsa20,chacha20-ietf etc.）",
+      "description": "Shadowsocks encryption method.",
       "value": "chacha20-ietf-poly1305"
     },
      "PASSWORD": {
@@ -13,12 +13,12 @@
     },
 
      "V2_Path": {
-      "description": "Path path, default /s233, you can also replace s233 with uuid for safety, / cannot be less. If anti-generation is turned on, do not repeat with anti-generation uri",
-      "value": "/s233"
+      "description": "V2Ray handler path. Auto-generated with some secret value.",
+      "generator": "secret"
     },
 
      "AppName": {
-      "description": "Please enter the App Name filled in at the top to generate the configuration and QR code. If you don’t want to generate it, enter no",
+      "description": "App Name filled in at the top to generate the configuration and QR code. If you don’t want to generate it, enter no",
       "value": "no"
     },
 

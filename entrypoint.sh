@@ -10,7 +10,7 @@ if [[ -z "${ENCRYPT}" ]]; then
 fi
 
 if [[ -z "${V2_Path}" ]]; then
-  export V2_Path="/s233"
+  export V2_Path="s233"
 fi
 echo ${V2_Path}
 
@@ -32,7 +32,7 @@ if [ "$AppName" = "no" ]; then
   echo "Do not generate QR-code"
 else
   [ ! -d /wwwroot/${QR_Path} ] && mkdir /wwwroot/${QR_Path}
-  plugin=$(echo -n "v2ray;path=${V2_Path};host=${AppName}.herokuapp.com;tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')
+  plugin=$(echo -n "v2ray;path=/${V2_Path};host=${AppName}.herokuapp.com;tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')
   ss="ss://$(echo -n ${ENCRYPT}:${PASSWORD} | base64 -w 0)@${AppName}.herokuapp.com:443?plugin=${plugin}" 
   echo "${ss}" | tr -d '\n' > /wwwroot/${QR_Path}/index.html
   echo -n "${ss}" | qrencode -s 6 -o /wwwroot/${QR_Path}/vpn.png
