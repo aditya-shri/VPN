@@ -25,14 +25,7 @@
     "QR_Path": {
        "description": "QR code and configuration link path, the default qr_img, you can also use uuid for confidentiality, but it cannot be the same as V2_Path. If the AppName variable is no, this variable has no effect",
        "value": "/qr"
-     },
-
-     "ProxySite": {
-      "description": "Replacing a website, for example: www.ietf.org, if you don’t fill in it means to use a local static webpage file.",
-      "value": "www.ietf.org",
-      "required": false
-    }
-
+     }
   },
   "website": "",
   "repository": "",
