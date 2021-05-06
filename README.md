@@ -3,7 +3,7 @@
 
 Click the button below to deploy, and remember to order a Star if it works:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/aditya-shri/VPN/tree/main)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Snawoot/shadowsocks-heroku/tree/main)
 ---
 
 Native V2Ray deployment: <https://github.com/ygcaicn/v2ray-heroku>
@@ -26,7 +26,7 @@ After the server is deployed, open app to display the webpage normally. After th
 
 QR code address: https://test.herokuapp.com/qr/vpn.png
 
-(Change test to your own app name. If you changed the QR_Path (path to qr png, filled during deployment) variable, also change the corresponding qr_img to the modified one)
+(Change test to your own app name. If you changed the QR\_Path (path to qr png, filled during deployment) variable, also change the corresponding qr\_img to the modified one)
 
 Use the client (Shadowsocks recommended) to scan the QR code.
 
