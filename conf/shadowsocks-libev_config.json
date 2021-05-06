@@ -4,7 +4,7 @@ cat <<EOF
 {
     "server":"127.0.0.1",
     "server_port":"2333",
-    "password":"${PASSWORD}",
+    "password":${PASSWORD_JSON},
     "timeout":300,
     "method":"${ENCRYPT}",
     "mode": "tcp_only",
