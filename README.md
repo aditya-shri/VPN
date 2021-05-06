@@ -63,18 +63,6 @@ windows:
 
 <https://github.com/shadowsocks/shadowsocks-windows/wiki/Shadowsocks-Windows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E>
 
-## 3. Update
-
-To update the v2ray-plugin version, visit <https://dashboard.heroku.com/apps> and select the deployed app. If the VER variable is latest, directly select More --> Restart all dynos, the program will restart automatically and the progress can be confirmed through view Logs. 
-
-(Update the specified version: Settings --> Reveal Config Varsapp -->VER, modify to the required version number, such as 1.2)
-
-2020/03/01 The current version is working normally:
-
-+ shadowsocks-libev: 3.3.4+ds-2(debian apt)
-
-+ v2ray-plugin: v1.3.0
-
 # Reference
 
 https://github.com/ygcaicn/ss-heroku
