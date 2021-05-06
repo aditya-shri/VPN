@@ -2,7 +2,6 @@ FROM debian:sid
 
 ARG V2RAY_VERSION=v1.3.1
 
-COPY wwwroot.tar.gz /wwwroot/wwwroot.tar.gz
 COPY conf/ /conf
 COPY entrypoint.sh /entrypoint.sh
 
@@ -15,8 +14,6 @@ RUN set -ex\
     && apt install -y nginx-light \
     && apt autoremove -y \
     && apt clean -y \
-    && tar xvf /wwwroot/wwwroot.tar.gz -C /wwwroot \
-    && rm -rf /wwwroot/wwwroot.tar.gz \
     && chmod +x /entrypoint.sh \
     && mkdir -p /etc/shadowsocks-libev /v2raybin \
     && wget -O- "https://github.com/shadowsocks/v2ray-plugin/releases/download/${V2RAY_VERSION}/v2ray-plugin-linux-amd64-${V2RAY_VERSION}.tar.gz" | \
