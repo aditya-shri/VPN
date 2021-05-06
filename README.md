@@ -1,14 +1,9 @@
 # Personal VPN
 ## Shadowsocks+V2Ray-plugin
 
-Click the button below to deploy, and remember to order a Star if it works:
+Click the button below to deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Snawoot/shadowsocks-heroku/tree/main)
----
-
-Native V2Ray deployment: <https://github.com/ygcaicn/v2ray-heroku>
-
----
 
 ## 0. Attention
 
@@ -20,7 +15,7 @@ An email address that can receive verification codes normally (@qq.com, @163.com
 
 ## 1. Verification
 
-After the server is deployed, open app to display the webpage normally. After the address is filled with the path (for example: <https://test.herokuapp.com/static>), the 404 page is displayed, which means the deployment is successful.
+After the server is deployed, open app to display the webpage normally. After the address is filled with the path (for example: <https://test.herokuapp.com/static>), the 403 page is displayed, which means the deployment is successful.
 
 ## 2. Client Configuration
 
@@ -46,11 +41,11 @@ Manual configuration:
 Server: test.herokuapp.com (change test to your app name)
 Port: 443
 Password: The password filled in during deployment
-Encry Method: RC4-MD5 (or other methods you fill in)
+Encry Method: chacha20-ietf-poly1305 (or other methods you fill in)
 Plugin: v2ray
 Plugin Transport mode: websocket-tls
 Hostname: Same as Server
-Path: The path you filled in during deployment
+Path: "/" + value of V2_Path in app Config Vars
 ```
 
 Those without a client can also download from here (Android):
