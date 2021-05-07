@@ -21,6 +21,15 @@ if [[ -z "${QR_Path}" ]]; then
 fi
 echo ${QR_Path}
 
+case "$AppName" in
+	*.*)
+		export DOMAIN="$AppName"
+		;;
+	*)
+		export DOMAIN="$AppName.herokuapp.com"
+		;;
+esac
+
 bash /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
 cat /etc/shadowsocks-libev/config.json
@@ -34,8 +43,8 @@ if [ "$AppName" = "no" ]; then
   echo "Do not generate QR-code"
 else
   [ ! -d /wwwroot/${QR_Path} ] && mkdir /wwwroot/${QR_Path}
-  plugin=$(echo -n "v2ray;path=/${V2_Path};host=${AppName}.herokuapp.com;tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')
-  ss="ss://$(echo -n ${ENCRYPT}:${PASSWORD} | base64 -w 0)@${AppName}.herokuapp.com:443?plugin=${plugin}" 
+  plugin=$(echo -n "v2ray;path=/${V2_Path};host=${DOMAIN};tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')
+  ss="ss://$(echo -n ${ENCRYPT}:${PASSWORD} | base64 -w 0)@${DOMAIN}:443?plugin=${plugin}" 
   echo "${ss}" | tr -d '\n' > /wwwroot/${QR_Path}/index.html
   echo -n "${ss}" | qrencode -s 6 -o /wwwroot/${QR_Path}/vpn.png
 fi
