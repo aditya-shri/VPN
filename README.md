@@ -30,6 +30,7 @@ https://{Domain}/qr
 ```
 
 (Change {Domain} to your own app server url.)
+
 Use the client (Shadowsocks recommended) to scan the QR code.
 
 **or**
@@ -39,6 +40,7 @@ Use 'ss' address:
 https://{Domain}/ss
 ```
 (Change {Domain} to your own app name)
+
 Copy the details after opening and import it to the client.
 
 **or**
