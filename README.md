@@ -1,18 +1,18 @@
 # Personal VPN
 ## Shadowsocks+V2Ray-plugin
 
-Click the button below to deploy, and remember to order a Star if it works:
+Click the button below to deploy, and remember to Star if it works:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 ---
 
 ## 0. Attention
 
-Deployment can be done on any server with the help of Docker. 
+- Deployment can be done on any server with the help of DockerFile. 
+- Heroku Deployment requires registration of a heroku account, a email is required when registering a heroku account (otherwise the verification code cannot be brushed out). 
+- If app gets ban on Heroku, try forking and then deploying OR deploy using Heroku-CLI.
 
-Heroku Deployment requires registration of a heroku account, a email is required when registering a heroku account (otherwise the verification code cannot be brushed out). 
-
-The environment variables required now are:
+The environment variables required are:
 ```json
 Domain   : The domain of your server without the schema(https, http etc)
 Password : Password you want to set for the Shadowsocks VPN service
@@ -20,14 +20,13 @@ Password : Password you want to set for the Shadowsocks VPN service
 
 ## 1. Verification
 
-After the server is deployed, open app to display the webpage normally. After the address is filled with the path (for example: <https://test.herokuapp.com/static>), the 404 page is displayed, which means the deployment is successful.
+After the server is deployed, open app to display the webpage normally. After the address is filled with the path (for example: <https://{Domain}/static>), the 404 page is displayed, which means the deployment is successful.
 
 ## 2. Client Configuration
 
 QR code address: https://{Domain}/qr
 
 (Change {Domain} to your own app server url.)
-
 Use the client (Shadowsocks recommended) to scan the QR code.
 
 **or**
@@ -77,7 +76,7 @@ Change {Domain} with your server url and {password} with your password.
 [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)
 Install the library and use the following command to connect to VPN:
 ```
-ss-local -c "local config file location"
+ss-local -c "config file location on your system"
 ```
 Then use any proxy script to route request through your VPN
 Ex:
@@ -89,6 +88,5 @@ Ex:
 
 # Reference
 
-https://hub.docker.com/r/shadowsocks/shadowsocks-libev
-
-https://github.com/shadowsocks/v2ray-plugin
+[ShadowSocks-libev](https://hub.docker.com/r/shadowsocks/shadowsocks-libev)
+[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin)
