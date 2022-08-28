@@ -7,7 +7,7 @@
       "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
     }, 
      "Domain": {
-      "description": "Please enter the complete url of server where the app is deployed (Without scheme like 'https://' etc))",
+      "description": "Please enter the complete url of server where the app is deployed (Without schema like 'https://' etc))",
       "value": "no"
     }
   },

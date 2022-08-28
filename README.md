@@ -1,21 +1,25 @@
 # Personal VPN
-## Shadowsocks+V2Ray-plugin
+### Based on Shadowsocks with V2Ray-plugin
 
 Click the button below to deploy, and remember to Star if it works:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+[![Railway](https://railway.app/button.svg)](https://railway.app/new/template/zN4vrb)
+
 ---
 
 ## 0. Attention
 
 - Deployment can be done on any server with the help of DockerFile. 
 - Heroku Deployment requires registration of a heroku account, a email is required when registering a heroku account (otherwise the verification code cannot be brushed out). 
-- If app gets ban on Heroku, try forking and then deploying OR deploy using Heroku-CLI.
+- If app gets ban on Heroku, try forking and then deploying OR deploy using Heroku-CLI. When deploying using Heroku-cli, remember to set stack to container.
 
 The environment variables required are:
-```json
-Domain   : The domain of your server without the schema(https, http etc)
+```txt
+Domain   : The domain of your server without the schema(https, http etc). Ex: test.com, not https://test.com
 Password : Password you want to set for the Shadowsocks VPN service
+PORT	 : Server port, if not already defined by server provider(like Heroku,Railway provides)
 ```
 
 ## 1. Verification
@@ -39,7 +43,7 @@ Use the client (Shadowsocks recommended) to scan the QR code.
 ```
 https://{Domain}/ss
 ```
-(Change {Domain} to your own app name)
+(Change {Domain} to your own app server url.)
 
 Copy the details after opening and import it to the client.
 
@@ -70,23 +74,29 @@ Change {Domain} with your server url and {password} with your password.
 
 ### Android 
 
-[shadowsocks](https://github.com/shadowsocks/shadowsocks-android/releases/latest/download/shadowsocks--universal-5.1.9.apk)
+[shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks&hl=en_IN&gl=US)
 
-[v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin-android/releases/latest/download/v2ray-arm64-v8a-1.3.1.apk)
+[v2ray-plugin](https://play.google.com/store/apps/details?id=com.github.shadowsocks.plugin.v2ray)
 
 ### Windows
 
-<https://github.com/shadowsocks/shadowsocks-windows/wiki/Shadowsocks-Windows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E>
+[ShadowSocks-Windows](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip)
+
+[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-windows-amd64-v1.3.1.tar.gz)
+
+Extract and keep v2ray plugin in the same folder as shadowsocks.
 
 ### Linux
 
 [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)
 
-Install this library and use the following command to connect to VPN:
+[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-linux-amd64-v1.3.1.tar.gz)
+
+Install the shadowsocks library, download and move the v2ray plugin in '/usr/bin' and use the following command to connect to VPN:
 ```
 ss-local -c "config file location on your system"
 ```
-Then use any proxy script to route request through your VPN
+Then use any proxy script to route your system's requests through your VPN.
 Ex:
 - [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=en) : This extension can be used in chrome
 - Polipo : Routes all of the network through your proxy
