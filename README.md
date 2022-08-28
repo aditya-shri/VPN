@@ -1,5 +1,5 @@
 # Personal VPN
-### Based on Shadowsocks using V2Ray-plugin
+### Based on Shadowsocks with V2Ray-plugin
 
 Click the button below to deploy, and remember to Star if it works:
 
