@@ -24,15 +24,20 @@ After the server is deployed, open app to display the webpage normally. After th
 
 ## 2. Client Configuration
 
-QR code address: https://{Domain}/qr
+QR code address: 
+``` 
+https://{Domain}/qr 
+```
 
 (Change {Domain} to your own app server url.)
 Use the client (Shadowsocks recommended) to scan the QR code.
 
 **or**
 
-Use 'ss' address: https://{Domain}/ss
-
+Use 'ss' address: 
+```
+https://{Domain}/ss
+```
 (Change {Domain} to your own app name)
 Copy the details after opening and import it to the client.
 
@@ -45,7 +50,7 @@ Manual configuration (Config file):
 	"server" : "{Domain}",
 	"server_port" : 443,
 	"local_port" : 1080,
-    "password":"{password}",
+	"password":"{password}",
 	"timeout":300,
 	"method":"chacha20-ietf-poly1305",
 	"mode": "tcp_only",
