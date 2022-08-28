@@ -1,45 +1,15 @@
 {
-  "name": "Shadowsocks+V2Ray-plugin Rapid deployment",
-  "description": "Deploy Shadowsocks+V2Ray-plugin to Heroku.",
-  "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
+  "name": "Aditya's VPN Rapid deployment",
+  "description": "Deploy Shadowsocks+V2Ray-plugin to your Server",
   "env": {
-     "ENCRYPT": {
-      "description": "Encryption method, due to https blessing, choose the simplest one, default: chacha20-ietf-poly1305, others are（aes-256-cfb,chacha20-ietf-poly1305,salsa20,chacha20-ietf etc.）",
-      "value": "chacha20-ietf-poly1305"
-    },
-     "PASSWORD": {
-      "description": "The password of shadowsocks, you can use uuid as the password (http://www.uuid.online/ online generation)",
+     "Password": {
+      "description": "The password of shadowsocks",
       "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
-    },
-
-    "VER": {
-       "description": "v2ray-plugin version, the latest version is installed by default, you can go to https://github.com/shadowsocks/v2ray-plugin/releasesV2Ray to select the version (for example: 1.1.0)",
-       "value": "latest"
-     }, 
-
-     "V2_Path": {
-      "description": "Path path, default /s233, you can also replace s233 with uuid for safety, / cannot be less. If anti-generation is turned on, do not repeat with anti-generation uri",
-      "value": "/s233"
-    },
-
-     "AppName": {
-      "description": "Please enter the App Name filled in at the top to generate the configuration and QR code. If you don’t want to generate it, enter no",
+    }, 
+     "Domain": {
+      "description": "Please enter the complete url of server where the app is deployed (Without scheme like 'https://' etc))",
       "value": "no"
-    },
-
-    "QR_Path": {
-       "description": "QR code and configuration link path, the default qr_img, you can also use uuid for confidentiality, but it cannot be the same as V2_Path. If the AppName variable is no, this variable has no effect",
-       "value": "/qr"
-     },
-
-     "ProxySite": {
-      "description": "Replacing a website, for example: www.ietf.org, if you don’t fill in it means to use a local static webpage file.",
-      "value": "www.ietf.org",
-      "required": false
     }
-
   },
-  "website": "",
-  "repository": "",
   "stack": "container"
  }
