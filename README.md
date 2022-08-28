@@ -19,6 +19,7 @@ The environment variables required are:
 ```txt
 Domain   : The domain of your server without the schema(https, http etc). Ex: test.com, not https://test.com
 Password : Password you want to set for the Shadowsocks VPN service
+PORT	 : Server port, if not already defined by server provider(like Heroku,Railway provides)
 ```
 
 ## 1. Verification
