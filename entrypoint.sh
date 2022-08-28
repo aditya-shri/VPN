@@ -38,12 +38,12 @@ sed -e "/^#/d"\
     -e "s|\${QR_Path}|${QR_Path}|g"\
     -e "$s"\
     /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf 
+cat /etc/nginx/conf.d/ss.conf
 
 if [ "$Domain" = "no" ]; then
   echo "Aditya's Personal VPN"
 else
   mkdir /wwwroot${QR_Path}
-  touch /wwwroot${QR_Path}/index.html
   plugin=$(echo -n "v2ray;path=${V2_Path};host=${Domain};tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')
   ss="ss://$(echo -n ${ENCRYPT}:${PASSWORD} | base64 -w 0)@${Domain}:443?plugin=${plugin}" 
   echo "${ss}" | tr -d '\n' > /wwwroot${QR_Path}/index.html
