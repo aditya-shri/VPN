@@ -96,6 +96,7 @@ Install the shadowsocks library, download and move the v2ray plugin in '/usr/bin
 ss-local -c "config file location on your system"
 ```
 Then use any proxy script to route your system's requests through your VPN
+
 Ex:
 - [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=en) : This extension can be used in chrome
 - Polipo : Routes all of the network through your proxy
