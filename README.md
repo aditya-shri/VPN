@@ -81,7 +81,8 @@ Change {Domain} with your server url and {password} with your password.
 ### Linux
 
 [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)
-Install the library and use the following command to connect to VPN:
+
+Install this library and use the following command to connect to VPN:
 ```
 ss-local -c "config file location on your system"
 ```
@@ -96,4 +97,5 @@ Ex:
 # Reference
 
 [ShadowSocks-libev](https://hub.docker.com/r/shadowsocks/shadowsocks-libev)
+
 [V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin)
