@@ -43,11 +43,10 @@ cat /etc/nginx/conf.d/ss.conf
 if [ "$Domain" = "no" ]; then
   echo "Aditya's Personal VPN"
 else
-  mkdir /wwwroot${QR_Path}
   plugin=$(echo -n "v2ray;path=${V2_Path};host=${Domain};tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')
   ss="ss://$(echo -n ${ENCRYPT}:${PASSWORD} | base64 -w 0)@${Domain}:443?plugin=${plugin}" 
-  echo "${ss}" | tr -d '\n' > /wwwroot${QR_Path}/index.html
-  echo -n "${ss}" | qrencode -s 6 -o /wwwroot${QR_Path}/vpn.png
+  echo "${ss}" | tr -d '\n' > /wwwroot/index.html
+  echo -n "${ss}" | qrencode -s 6 -o /wwwroot/vpn.png
 fi
 
 ss-server -c /etc/shadowsocks-libev/config.json &
