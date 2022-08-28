@@ -86,7 +86,7 @@ Install this library and use the following command to connect to VPN:
 ```
 ss-local -c "config file location on your system"
 ```
-Then use any proxy script to route request through your VPN
+Then use any proxy script to route your system requests through your VPN
 Ex:
 - [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=en) : This extension can be used in chrome
 - Polipo : Routes all of the network through your proxy
