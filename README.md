@@ -80,6 +80,7 @@ Change {Domain} with your server url and {password} with your password.
 ### Windows
 
 [ShadowSocks-Windows](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip)
+
 [V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-windows-amd64-v1.3.1.tar.gz)
 
 Extract and keep v2ray plugin in the same folder as shadowsocks.
