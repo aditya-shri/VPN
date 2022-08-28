@@ -73,13 +73,16 @@ Change {Domain} with your server url and {password} with your password.
 
 ### Android 
 
-[shadowsocks](https://github.com/shadowsocks/shadowsocks-android/releases/latest/download/shadowsocks--universal-5.1.9.apk)
+[shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks&hl=en_IN&gl=US)
 
-[v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin-android/releases/latest/download/v2ray-arm64-v8a-1.3.1.apk)
+[v2ray-plugin](https://play.google.com/store/apps/details?id=com.github.shadowsocks.plugin.v2ray)
 
 ### Windows
 
-<https://github.com/shadowsocks/shadowsocks-windows/wiki/Shadowsocks-Windows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E>
+[ShadowSocks-Windows](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip)
+[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-windows-amd64-v1.3.1.tar.gz)
+
+Extract and keep v2ray plugin in the same folder as shadowsocks.
 
 ### Linux
 
