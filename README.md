@@ -24,7 +24,7 @@ After the server is deployed, open app to display the webpage normally. After th
 
 ## 2. Client Configuration
 
-QR code address: 
+### QR code address: 
 ``` 
 https://{Domain}/qr 
 ```
@@ -35,7 +35,7 @@ Use the client (Shadowsocks recommended) to scan the QR code.
 
 **or**
 
-Use 'ss' address: 
+### Use 'ss' address: 
 ```
 https://{Domain}/ss
 ```
@@ -45,7 +45,7 @@ Copy the details after opening and import it to the client.
 
 **or**
 
-Manual configuration (Config file):
+### Manual configuration (Config file):
 
 ```json
 {
