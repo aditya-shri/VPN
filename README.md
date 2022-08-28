@@ -13,11 +13,11 @@ Click the button below to deploy, and remember to Star if it works:
 
 - Deployment can be done on any server with the help of DockerFile. 
 - Heroku Deployment requires registration of a heroku account, a email is required when registering a heroku account (otherwise the verification code cannot be brushed out). 
-- If app gets ban on Heroku, try forking and then deploying OR deploy using Heroku-CLI.
+- If app gets ban on Heroku, try forking and then deploying OR deploy using Heroku-CLI. When deploying using Heroku-cli, remember to set stack to container.
 
 The environment variables required are:
 ```json
-Domain   : The domain of your server without the schema(https, http etc)
+Domain   : The domain of your server without the schema(https, http etc). Ex: test.com, not https://test.com
 Password : Password you want to set for the Shadowsocks VPN service
 ```
 
