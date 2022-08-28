@@ -13,7 +13,7 @@ mkdir /wwwroot
 mkdir /v2raybin
 cd /v2raybin
 V2RAY_URL="https://github.com/shadowsocks/v2ray-plugin/releases/download/${V_VER}/v2ray-plugin-linux-amd64-${V_VER}.tar.gz"
-wget --no-check-certificate ${V2RAY_URL}
+wget -q --no-check-certificate ${V2RAY_URL}
 tar -zxvf v2ray-plugin-linux-amd64-$V_VER.tar.gz
 rm -rf v2ray-plugin-linux-amd64-$V_VER.tar.gz
 mv v2ray-plugin_linux_amd64 /usr/bin/v2ray-plugin
@@ -30,6 +30,7 @@ sed -e "/^#/d"\
     -e "s|\${V2_Path}|${V2_Path}|g"\
     /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
+cat /etc/shadowsocks-libev/config.json
 
 sed -e "/^#/d"\
     -e "s/\${PORT}/${PORT}/g"\
@@ -42,11 +43,11 @@ if [ "$Domain" = "no" ]; then
   echo "Aditya's Personal VPN"
 else
   mkdir /wwwroot${QR_Path}
-  touch /wwwroot${QR_Path}
+  touch /wwwroot${QR_Path}/index.html
   plugin=$(echo -n "v2ray;path=${V2_Path};host=${Domain};tls" | sed -e 's/\//%2F/g' -e 's/=/%3D/g' -e 's/;/%3B/g')
   ss="ss://$(echo -n ${ENCRYPT}:${PASSWORD} | base64 -w 0)@${Domain}:443?plugin=${plugin}" 
-  echo "${ss}" | tr -d '\n' > /wwwroot/${QR_Path}/index.html
-  echo -n "${ss}" | qrencode -s 6 -o /wwwroot/${QR_Path}/vpn.png
+  echo "${ss}" | tr -d '\n' > /wwwroot${QR_Path}/index.html
+  echo -n "${ss}" | qrencode -s 6 -o /wwwroot${QR_Path}/vpn.png
 fi
 
 ss-server -c /etc/shadowsocks-libev/config.json &
