@@ -89,7 +89,9 @@ Extract and keep v2ray plugin in the same folder as shadowsocks.
 
 [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)
 
-Install this library and use the following command to connect to VPN:
+[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-linux-amd64-v1.3.1.tar.gz)
+
+Install the shadowsocks library, download and move the v2ray plugin in '/etc/bin' and use the following command to connect to VPN:
 ```
 ss-local -c "config file location on your system"
 ```
