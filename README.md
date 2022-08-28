@@ -24,7 +24,7 @@ After the server is deployed, open app to display the webpage normally. After th
 
 ## 2. Client Configuration
 
-QR code address: https://{Domain}/qr/vpn.png
+QR code address: https://{Domain}/qr
 
 (Change {Domain} to your own app server url.)
 
@@ -32,7 +32,7 @@ Use the client (Shadowsocks recommended) to scan the QR code.
 
 **or**
 
-Use Configuration 'ss' url -> Address: https://{Domain}/qr/
+Use 'ss' address: https://{Domain}/ss
 
 (Change {Domain} to your own app name)
 Copy the details after opening and import it to the client.
