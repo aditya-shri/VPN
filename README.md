@@ -16,7 +16,7 @@ Click the button below to deploy, and remember to Star if it works:
 - If app gets ban on Heroku, try forking and then deploying OR deploy using Heroku-CLI. When deploying using Heroku-cli, remember to set stack to container.
 
 The environment variables required are:
-```sh
+```txt
 Domain   : The domain of your server without the schema(https, http etc). Ex: test.com, not https://test.com
 Password : Password you want to set for the Shadowsocks VPN service
 ```
