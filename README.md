@@ -70,7 +70,7 @@ Copy the details after opening and import it to the client.
 ```
 Change {Domain} with your server url and {password} with your password.
 
-## Clients
+## 3. Clients
 
 ### Android 
 
