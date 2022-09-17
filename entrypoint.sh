@@ -8,16 +8,8 @@ QR_Path="/qr"
 
 #V2Ray Configuration
 V2_Path="/v2"
-V_VER=`wget -qO- "https://api.github.com/repos/shadowsocks/v2ray-plugin/releases/latest" | sed -n -r -e 's/.*"tag_name".+?"([vV0-9\.]+?)".*/\1/p'`
 mkdir /wwwroot
-mkdir /v2raybin
-cd /v2raybin
-V2RAY_URL="https://github.com/shadowsocks/v2ray-plugin/releases/download/${V_VER}/v2ray-plugin-linux-amd64-${V_VER}.tar.gz"
-wget -q --no-check-certificate ${V2RAY_URL}
-tar -zxvf v2ray-plugin-linux-amd64-$V_VER.tar.gz
-rm -rf v2ray-plugin-linux-amd64-$V_VER.tar.gz
-mv v2ray-plugin_linux_amd64 /usr/bin/v2ray-plugin
-rm -rf /v2raybin
+mv /v2 /usr/bin/v2
 
 if [ ! -d /etc/shadowsocks-libev ]; then  
   mkdir /etc/shadowsocks-libev

@@ -1,6 +1,6 @@
 {
   "name": "Aditya's VPN Rapid deployment",
-  "description": "Deploy Shadowsocks+V2Ray-plugin to your Server",
+  "description": "Deploy Shadowsocks to your Server",
   "env": {
      "Password": {
       "description": "The password of shadowsocks",
