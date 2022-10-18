@@ -3,7 +3,7 @@
 
 Click the button below to deploy, and remember to Star if it works:
 
-[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/aditya-shri/VPN)
 
 [![Railway](https://railway.app/button.svg)](https://railway.app/new/template/zN4vrb)
 
