@@ -1,5 +1,8 @@
 #!/bin/bash
 
+shopt -s expand_aliases
+alias server="ss-server"
+
 if [[ -z "${Password}" ]]; then
   Password="5c301bb8-6c77-41a0-a606-4ba11bbab084"
 fi
@@ -40,7 +43,6 @@ else
   echo -n "${ss}" | qrencode -s 6 -o /wwwroot/vpn.png
 fi
 
-alias server="ss-server"
 server -c /etc/shadowsocks-libev/config.json &
 rm -rf /etc/nginx/sites-enabled/default
 nginx -g 'daemon off;'
