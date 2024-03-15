@@ -1,6 +1,7 @@
 #!/bin/bash
 
 QR_Path="/qr"
+mkdir wwwroot
 
 sed -e "/^#/d"\
     -e "s/\${PORT}/${PORT}/g"\
@@ -9,7 +10,7 @@ sed -e "/^#/d"\
     /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf 
 
 sed -e "/^#/d"\
-    -e "s/\${PORT}/${PORT}/g"\
+    -e "s/\${PORT}/443/g"\
     /conf/config.json > /etc/v2ray/config.json 
 
 if [ "${Domain}" = "no" ]; then
