@@ -10,7 +10,7 @@ sed -e "/^#/d"\
 
 sed -e "/^#/d"\
     -e "s/\${PORT}/${PORT}/g"\
-    /conf/config.conf > /etc/v2ray/config.json 
+    /conf/config.json > /etc/v2ray/config.json 
 
 if [ "${Domain}" = "no" ]; then
   echo "Aditya's Personal VPN"
