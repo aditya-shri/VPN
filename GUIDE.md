@@ -210,18 +210,18 @@
 	2. Configure: 
 		1. UnZip
 		2. Run Client
-            ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111902.png)
+            - ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111902.png)
 
 		3. Configure data in the client
-            ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111953.png)
+            - ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111953.png)
 
 		4. Start proxy
-            ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123112126.png)
+            - ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123112126.png)
 
 3. Android
 	1. Download Shadowsocks client
 	2. Configure the data in client
-        ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123141118.png)
+        - ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123141118.png)
 
 4. IOS
 	- Open "App Store", To search "shadowrocket". Current price: ￥12
@@ -234,13 +234,13 @@
 1. Download Extension
 2.  Configure
 	- Set proxy
-        ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-01.png)
+        - ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-01.png)
 	- Set rules
-        ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-02.png)
+        - ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-02.png)
 
-		Rules (Select any one):
-		- http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
-		- https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+		- Rules (Select any one):
+		    - http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
+		    - https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 
 
 ## Reference
