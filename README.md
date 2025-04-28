@@ -102,7 +102,7 @@ Ex:
 - Polipo : Routes all of the network through your proxy
 
 ### Reference Guide for client setup
-[Guide](https://zhaorengui.github.io/network/software/2018/08/10/shadowsocks-switchyOmega-en/)
+[Guide](./GUIDE.md)
 
 # Reference
 
