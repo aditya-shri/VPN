@@ -208,26 +208,38 @@
 2. Windows
 	1. Download Shadowsocks client
 	2. Configure: 
-		1. UnZip[![?](https://web.archive.org/web/20221206231806im_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111953.png)
-		2. Run Client[![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111902.png)]
-		3. Configure data in the client[![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111953.png)]
-		4. Start proxy[![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123112126.png)]
+		1. UnZip
+            ![?](https://web.archive.org/web/20221206231806im_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111953.png)
+
+		2. Run Client
+            ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111902.png)
+
+		3. Configure data in the client
+            ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111953.png)
+
+		4. Start proxy
+            ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123112126.png)
 
 3. Android
 	1. Download Shadowsocks client
-	2. Configure the data in client[![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123141118.png)]
+	2. Configure the data in client
+        ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123141118.png)
 
 4. IOS
 	- Open "App Store", To search "shadowrocket". Current price: ￥12
-	- Add server configure. Okay.ios-shadowrocket-01.jpegios-shadowrocket-02.jpeg
+	- Add server configure.
+
 5. Mac OS X
 	https://github.com/shadowsocks/ShadowsocksX-NG
 
 ## Browser Plugin: SwitchyOmega
 1. Download Extension
 2.  Configure
-	- Set proxy[![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-01.png)]
-	- Set rules[![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-02.png)]
+	- Set proxy
+        ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-01.png)
+	- Set rules
+        ![?](https://web.archive.org/web/20221206231805im_/https://zhaorengui.github.io/assets/images/switchyomega-02.png)
+
 		Rules (Select any one):
 		- http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
 		- https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
