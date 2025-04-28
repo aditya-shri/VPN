@@ -209,8 +209,6 @@
 	1. Download Shadowsocks client
 	2. Configure: 
 		1. UnZip
-            ![?](https://web.archive.org/web/20221206231806im_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111953.png)
-
 		2. Run Client
             ![?](https://web.archive.org/web/20221206231805mp_/https://zhaorengui.github.io/assets/images/shadowsocks-20170123111902.png)
 
