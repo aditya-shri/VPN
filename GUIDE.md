@@ -245,3 +245,36 @@
 
 ## Reference
 - Web Archive page: [Link](https://web.archive.org/web/20221206231805/https://zhaorengui.github.io/network/software/2018/08/10/shadowsocks-switchyOmega-en/)
+
+- ## Troubleshooting Guide
+
+### Common Issues and Solutions
+
+1. **Connection Issues**
+   - Ensure your internet connection is working properly
+   - Verify that the VPN server is running
+   - Check your configuration file for errors
+
+2. **Slow Speeds**
+   - Try connecting to a different server location
+   - Check your internet speed without the VPN
+   - Ensure no other applications are using excessive bandwidth
+
+3. **Browser Plugin Not Working**
+   - Make sure the plugin is properly installed
+   - Verify the proxy settings match your configuration
+   - Clear your browser cache and restart the browser
+
+4. **Authentication Errors**
+   - Double-check your username and password
+   - Ensure your account is active and not expired
+   - Verify the encryption method matches the server settings
+
+5. **Firewall Issues**
+   - Check if your firewall is blocking the connection
+   - Add exceptions for the VPN client in your firewall settings
+   - Try temporarily disabling the firewall to test the connection
+
+### Additional Resources
+- [Shadowsocks Official Documentation](https://shadowsocks.org/en/index.html)
+- [V2Ray Official Documentation](https://www.v2ray.com/en/)
