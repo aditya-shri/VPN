@@ -16,10 +16,12 @@ if [ ! -d /etc/shadowsocks-libev ]; then
 fi
 
 # TODO: bug when PASSWORD contain '/'
+
 sed -e "/^#/d"\
     -e "s/\${PASSWORD}/${Password}/g"\
     -e "s/\${ENCRYPT}/${ENCRYPT}/g"\
     -e "s|\${V2_Path}|${V2_Path}|g"\
+    -e "s/127.0.0.1/0.0.0.0/g"\
     /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
 cat /etc/shadowsocks-libev/config.json
