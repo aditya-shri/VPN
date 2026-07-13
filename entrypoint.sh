@@ -16,6 +16,7 @@ if [ ! -d /etc/shadowsocks-libev ]; then
 fi
 
 # TODO: bug when PASSWORD contain '/'
+-e "s/127.0.0.1/0.0.0.0/g"\
 sed -e "/^#/d"\
     -e "s/\${PASSWORD}/${Password}/g"\
     -e "s/\${ENCRYPT}/${ENCRYPT}/g"\
